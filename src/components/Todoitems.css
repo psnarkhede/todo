@@ -14,6 +14,25 @@
     height:30px;
 }
 
+
+
+.div1{
+    margin-left: 10px;
+    width:250px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete{
+    margin-left: 20px;
+    padding:5px 10px 5px 10px;
+    border-radius: 8px;
+    background-color: violet;
+    cursor: pointer;
+    color:white;
+}
+
 .striked{
     text-decoration: line-through;
     color:rgb(197, 194, 194);

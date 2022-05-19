@@ -5,6 +5,9 @@ import "./Todoitems.css";
 const Todo = () => {
   let [input, setInput] = useState("");
   const [todo, setTodo] = useState([]);
+  const deletetodo = (xyz) => {
+    setTodo(todo.filter((todo) => todo.value !== xyz))
+  }
 
   const handlechange = (e) => {
     setInput(e.target.value);
@@ -27,7 +30,7 @@ const Todo = () => {
       </div>
 
       <div>
-        <Todolist tasks={[...todo]} />
+        <Todolist tasks={[...todo]} deletetodo={deletetodo}/>
       </div>
     </div>
   );
